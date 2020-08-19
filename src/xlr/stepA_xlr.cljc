@@ -206,5 +206,5 @@
   (if args
     (rep (str "(load-file \"" (first args) "\")"))
     (do
-      (rep "(println (str \"Mal [\" *host-language* \"]\"))")
+      (rep "(println (str \"Exemplar [\" *host-language* \"]\"))")
       (repl-loop))))
