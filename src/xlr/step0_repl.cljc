@@ -18,7 +18,7 @@
 (defn rep [strng] (PRINT (EVAL (READ strng), {})))
 ;; repl loop
 (defn repl-loop []
-  (let [line (readline/readline "user> ")]
+  (let [line (readline/readline "> ")]
     (when line
       (when-not (re-seq #"^\s*$|^\s*;.*$" line) ; blank/comment
         (println (rep line)))
