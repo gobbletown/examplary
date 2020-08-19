@@ -1,0 +1,6 @@
+tags
+.DS_Store
+.rebel_readline_history
+.bash_history
+.lsp/
+target/
