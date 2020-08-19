@@ -26,3 +26,21 @@ Info 24   [19:47:20.602] Finishing updateGraphWorker: Project: /dev/null/inferre
 Info 25   [19:47:20.828] Structure before ensureProjectForOpenFiles:
 Info 26   [19:47:20.829] Structure after ensureProjectForOpenFiles:
 Info 27   [19:47:20.829] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
+Info 28   [19:49:0.525] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 29   [19:49:0.525] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 30   [19:49:0.526] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 31   [19:49:0.532] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 8 structureChanged: false Elapsed: 6ms
+Info 32   [19:49:0.727] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 33   [19:49:0.735] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 9 structureChanged: false Elapsed: 8ms
+Info 34   [19:49:0.884] Structure before ensureProjectForOpenFiles:
+Info 35   [19:49:0.885] Structure after ensureProjectForOpenFiles:
+Info 36   [19:49:0.885] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
+Info 37   [19:54:3.579] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 38   [19:54:3.579] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 39   [19:54:3.580] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 40   [19:54:3.590] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 10 structureChanged: false Elapsed: 10ms
+Info 41   [19:54:3.781] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 42   [19:54:3.792] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 11 structureChanged: false Elapsed: 10ms
+Info 43   [19:54:3.943] Structure before ensureProjectForOpenFiles:
+Info 44   [19:54:3.943] Structure after ensureProjectForOpenFiles:
+Info 45   [19:54:3.943] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
