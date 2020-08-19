@@ -10,6 +10,9 @@
   - Direct LM requests
     - Spacy
 
+** Tasks to implement
+https://spacy.io/universe/project/contextualSpellCheck
+
 ** Thoughts
 - Lisp > TCL, since types may be added later
 
