@@ -44,3 +44,70 @@ Info 42   [19:54:3.792] Finishing updateGraphWorker: Project: /dev/null/inferred
 Info 43   [19:54:3.943] Structure before ensureProjectForOpenFiles:
 Info 44   [19:54:3.943] Structure after ensureProjectForOpenFiles:
 Info 45   [19:54:3.943] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
+Info 46   [20:3:3.396] getCompletionData: Get current token: 0
+Info 47   [20:3:3.396] getCompletionData: Is inside comment: 0
+Info 48   [20:3:3.396] getCompletionData: Get previous token 1: 0
+Info 49   [20:3:3.396] getCompletionData: Get previous token 2: 0
+Info 50   [20:3:3.396] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 51   [20:3:3.400] getCompletionData: Semantic work: 4
+Info 52   [20:3:3.412] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 11
+Info 53   [20:3:11.581] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 54   [20:3:11.614] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 12 structureChanged: false Elapsed: 33ms
+Info 55   [20:3:11.616] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 56   [20:3:11.620] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 13 structureChanged: true Elapsed: 4ms
+Err 57    [20:3:11.631] Exception on executing command {"command":"getApplicableRefactors","seq":244,"type":"request","arguments":{"file":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js","startLine":8,"startOffset":1,"endLine":8,"endOffset":1}}:
+
+    No Project.
+
+    Error: No Project.
+        at Object.ThrowNoProject (/usr/local/lib/node_modules/typescript/lib/tsserver.js:119984:23)
+        at ScriptInfo.getDefaultProject (/usr/local/lib/node_modules/typescript/lib/tsserver.js:120561:46)
+        at ProjectService.doEnsureDefaultProjectForFile (/usr/local/lib/node_modules/typescript/lib/tsserver.js:122367:48)
+        at ProjectService.ensureDefaultProjectForFile (/usr/local/lib/node_modules/typescript/lib/tsserver.js:122362:75)
+        at IOSession.Session.getFileAndProjectWorker (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125176:87)
+        at IOSession.Session.getFileAndProject (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125161:29)
+        at IOSession.Session.getApplicableRefactors (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125603:31)
+        at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/local/lib/node_modules/typescript/lib/tsserver.js:124479:61)
+        at /usr/local/lib/node_modules/typescript/lib/tsserver.js:125824:88
+        at IOSession.Session.executeWithRequestId (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125815:28)
+        at IOSession.Session.executeCommand (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125824:33)
+        at IOSession.Session.onMessage (/usr/local/lib/node_modules/typescript/lib/tsserver.js:125846:35)
+        at Interface.<anonymous> (/usr/local/lib/node_modules/typescript/lib/tsserver.js:127106:27)
+        at Interface.emit (events.js:182:13)
+        at Interface._onLine (readline.js:290:10)
+        at Interface._normalWrite (readline.js:433:12)
+        at Socket.ondata (readline.js:149:10)
+        at Socket.emit (events.js:182:13)
+        at addChunk (_stream_readable.js:283:12)
+        at readableAddChunk (_stream_readable.js:264:11)
+        at Socket.Readable.push (_stream_readable.js:219:10)
+        at Pipe.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+Info 58   [20:3:11.890] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 59   [20:3:11.891] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 60   [20:3:11.891] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 61   [20:3:11.991] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 14 structureChanged: true Elapsed: 100ms
+Info 62   [20:3:11.992] Structure before ensureProjectForOpenFiles:
+Info 63   [20:3:11.992] Structure after ensureProjectForOpenFiles:
+Info 64   [20:3:11.992] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
+Info 65   [20:3:12.95] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 66   [20:3:12.100] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 15 structureChanged: false Elapsed: 5ms
+Info 67   [20:3:12.345] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 68   [20:3:12.348] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 16 structureChanged: true Elapsed: 3ms
+Info 69   [20:3:12.348] Structure before ensureProjectForOpenFiles:
+Info 70   [20:3:12.348] Structure after ensureProjectForOpenFiles:
+Info 71   [20:3:12.348] got projects updated in background, updating diagnostics for 
+Info 72   [20:3:12.481] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 73   [20:3:12.481] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 74   [20:3:12.481] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 75   [20:3:12.564] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 17 structureChanged: true Elapsed: 83ms
+Info 76   [20:3:12.682] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 77   [20:3:12.687] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 18 structureChanged: false Elapsed: 5ms
+Info 78   [20:3:12.917] Structure before ensureProjectForOpenFiles:
+Info 79   [20:3:12.917] Structure after ensureProjectForOpenFiles:
+Info 80   [20:3:12.917] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
+Info 81   [20:3:16.201] getCompletionData: Get current token: 0
+Info 82   [20:3:16.201] getCompletionData: Is inside comment: 0
+Info 83   [20:3:16.201] getCompletionData: Get previous token 1: 0
+Info 84   [20:3:16.201] getCompletionsAtPosition: isCompletionListBlocker: 0
+Info 85   [20:3:16.204] getCompletionData: Semantic work: 3
+Info 86   [20:3:16.212] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8

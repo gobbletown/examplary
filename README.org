@@ -5,6 +5,9 @@
 - example-oriented
 - describing seq2seq tasks
 - prototyping language that uses seq2seq to approximate tasks
+- compile to
+  - OpenAPI requests
+  - LM requests
 
 ** Thoughts
 - Lisp > TCL, since types may be added later
@@ -107,4 +110,5 @@ Develop a clojure library in conjunction with this DSL.
   (- 2 1) ; => 1
   (* 1 2) ; => 2
   (/ 2 1) ; => 2
+  (eval '(+ 1 2))
 #+END_SRC

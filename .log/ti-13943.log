@@ -114,3 +114,48 @@ found 0 vulnerabilities
     {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"kind":"action::set"}
 [19:54:3.692] Response has been sent.
 [19:54:3.692] No new typings were requested as a result of typings discovery
+[20:3:11.714] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[20:3:11.714] Explicitly included types: []
+[20:3:11.715] Inferred typings from unresolved imports: []
+[20:3:11.715] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:11.715] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:11.715] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[20:3:11.715] Response has been sent.
+[20:3:11.715] No new typings were requested as a result of typings discovery
+[20:3:11.721] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[20:3:11.721] Explicitly included types: []
+[20:3:11.721] Inferred typings from unresolved imports: []
+[20:3:11.721] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:11.721] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:11.721] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[20:3:11.721] Response has been sent.
+[20:3:11.721] No new typings were requested as a result of typings discovery
+[20:3:12.92] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[20:3:12.92] Explicitly included types: []
+[20:3:12.93] Inferred typings from unresolved imports: []
+[20:3:12.93] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.93] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.93] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[20:3:12.93] Response has been sent.
+[20:3:12.93] No new typings were requested as a result of typings discovery
+[20:3:12.449] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":[],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[20:3:12.449] Explicitly included types: []
+[20:3:12.449] Inferred typings from unresolved imports: []
+[20:3:12.449] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.449] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.449] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[20:3:12.450] Response has been sent.
+[20:3:12.450] No new typings were requested as a result of typings discovery
+[20:3:12.665] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[20:3:12.666] Explicitly included types: []
+[20:3:12.666] Inferred typings from unresolved imports: []
+[20:3:12.666] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.666] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[20:3:12.666] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[20:3:12.666] Response has been sent.
+[20:3:12.666] No new typings were requested as a result of typings discovery
