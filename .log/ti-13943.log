@@ -1,0 +1,100 @@
+[19:47:6.188] Global cache location '/home/shane/.cache/typescript/3.2', safe file path '/usr/local/lib/node_modules/typescript/lib/typingSafeList.json', types map path /usr/local/lib/node_modules/typescript/lib/typesMap.json
+[19:47:6.189] Processing cache location '/home/shane/.cache/typescript/3.2'
+[19:47:6.189] Trying to find '/home/shane/.cache/typescript/3.2/package.json'...
+[19:47:6.191] Loaded content of '/home/shane/.cache/typescript/3.2/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.503"},"devDependencies":{"@types/aws4":"^1.5.1","@types/bootstrap":"^4.5.0","@types/caseless":"^0.12.2","@types/cssbeautify":"^0.3.1","@types/eslint":"^7.2.0","@types/eslint-config-prettier":"^6.11.0","@types/eslint-plugin-prettier":"^3.1.0","@types/extend":"^3.0.1","@types/forever-agent":"^0.6.0","@types/inherits":"0.0.30","@types/is-typedarray":"^1.0.0","@types/isstream":"^0.1.0","@types/jquery":"^3.5.0","@types/json-stringify-safe":"^5.0.0","@types/messenger":"^1.4.28","@types/mime-types":"^2.1.0","@types/node":"^14.0.13","@types/object-assign":"^4.0.30","@types/postcss-flexbugs-fixes":"^4.2.0","@types/postcss-import":"^12.0.0","@types/prettier":"^2.0.1","@types/request":"^2.48.5","@types/tough-cookie":"^4.0.0","@types/webpack-dev-server":"^3.11.0","@types/xo":"^0.28.0"}}
+[19:47:6.191] Loaded content of '/home/shane/.cache/typescript/3.2/package-lock.json'
+[19:47:6.201] Adding entry into typings cache: 'aws4' => '/home/shane/.cache/typescript/3.2/node_modules/@types/aws4/index.d.ts'
+[19:47:6.203] Adding entry into typings cache: 'bootstrap' => '/home/shane/.cache/typescript/3.2/node_modules/@types/bootstrap/index.d.ts'
+[19:47:6.205] Adding entry into typings cache: 'caseless' => '/home/shane/.cache/typescript/3.2/node_modules/@types/caseless/index.d.ts'
+[19:47:6.207] Adding entry into typings cache: 'cssbeautify' => '/home/shane/.cache/typescript/3.2/node_modules/@types/cssbeautify/index.d.ts'
+[19:47:6.212] Adding entry into typings cache: 'eslint' => '/home/shane/.cache/typescript/3.2/node_modules/@types/eslint/ts3.1/index.d.ts'
+[19:47:6.214] Adding entry into typings cache: 'eslint-config-prettier' => '/home/shane/.cache/typescript/3.2/node_modules/@types/eslint-config-prettier/index.d.ts'
+[19:47:6.216] Adding entry into typings cache: 'eslint-plugin-prettier' => '/home/shane/.cache/typescript/3.2/node_modules/@types/eslint-plugin-prettier/index.d.ts'
+[19:47:6.218] Adding entry into typings cache: 'extend' => '/home/shane/.cache/typescript/3.2/node_modules/@types/extend/index.d.ts'
+[19:47:6.220] Adding entry into typings cache: 'forever-agent' => '/home/shane/.cache/typescript/3.2/node_modules/@types/forever-agent/index.d.ts'
+[19:47:6.222] Adding entry into typings cache: 'inherits' => '/home/shane/.cache/typescript/3.2/node_modules/@types/inherits/index.d.ts'
+[19:47:6.223] Adding entry into typings cache: 'is-typedarray' => '/home/shane/.cache/typescript/3.2/node_modules/@types/is-typedarray/index.d.ts'
+[19:47:6.225] Adding entry into typings cache: 'isstream' => '/home/shane/.cache/typescript/3.2/node_modules/@types/isstream/index.d.ts'
+[19:47:6.227] Adding entry into typings cache: 'jquery' => '/home/shane/.cache/typescript/3.2/node_modules/@types/jquery/index.d.ts'
+[19:47:6.228] Adding entry into typings cache: 'json-stringify-safe' => '/home/shane/.cache/typescript/3.2/node_modules/@types/json-stringify-safe/index.d.ts'
+[19:47:6.229] Adding entry into typings cache: 'messenger' => '/home/shane/.cache/typescript/3.2/node_modules/@types/messenger/index.d.ts'
+[19:47:6.232] Adding entry into typings cache: 'mime-types' => '/home/shane/.cache/typescript/3.2/node_modules/@types/mime-types/index.d.ts'
+[19:47:6.236] Adding entry into typings cache: 'node' => '/home/shane/.cache/typescript/3.2/node_modules/@types/node/ts3.2/index.d.ts'
+[19:47:6.237] Adding entry into typings cache: 'object-assign' => '/home/shane/.cache/typescript/3.2/node_modules/@types/object-assign/index.d.ts'
+[19:47:6.239] Adding entry into typings cache: 'postcss-flexbugs-fixes' => '/home/shane/.cache/typescript/3.2/node_modules/@types/postcss-flexbugs-fixes/index.d.ts'
+[19:47:6.241] Adding entry into typings cache: 'postcss-import' => '/home/shane/.cache/typescript/3.2/node_modules/@types/postcss-import/index.d.ts'
+[19:47:6.243] Adding entry into typings cache: 'prettier' => '/home/shane/.cache/typescript/3.2/node_modules/@types/prettier/index.d.ts'
+[19:47:6.245] Adding entry into typings cache: 'request' => '/home/shane/.cache/typescript/3.2/node_modules/@types/request/index.d.ts'
+[19:47:6.246] Adding entry into typings cache: 'tough-cookie' => '/home/shane/.cache/typescript/3.2/node_modules/@types/tough-cookie/index.d.ts'
+[19:47:6.248] Adding entry into typings cache: 'webpack-dev-server' => '/home/shane/.cache/typescript/3.2/node_modules/@types/webpack-dev-server/index.d.ts'
+[19:47:6.249] Adding entry into typings cache: 'xo' => '/home/shane/.cache/typescript/3.2/node_modules/@types/xo/index.d.ts'
+[19:47:6.249] Finished processing cache location '/home/shane/.cache/typescript/3.2'
+[19:47:6.249] Process id: 13980
+[19:47:6.249] NPM location: "/usr/local/bin/npm" (explicit '--npmLocation' not  provided)
+[19:47:6.249] Npm config file: /home/shane/.cache/typescript/3.2/package.json
+[19:47:6.249] Updating types-registry npm package...
+[19:47:6.250] Exec: "/usr/local/bin/npm" install --ignore-scripts types-registry@latest
+[19:47:9.962]     Succeeded. stdout:
+    + types-registry@0.1.503
+    updated 1 package and audited 67 packages in 3.093s
+found 0 vulnerabilities
+
+
+[19:47:9.962] Updated types-registry npm package
+[19:47:10.772] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":["ffi-napi"],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[19:47:10.787] Loaded safelist from types map file '/usr/local/lib/node_modules/typescript/lib/typesMap.json'
+[19:47:10.788] Explicitly included types: []
+[19:47:10.789] Inferred typings from unresolved imports: ["ffi-napi"]
+[19:47:10.789] Result: {"cachedTypingPaths":[],"newTypingNames":["ffi-napi"],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:10.789] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":["ffi-napi"],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:10.790] DirectoryWatcher:: Added:: WatchInfo: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components
+[19:47:10.791] DirectoryWatcher:: Added:: WatchInfo: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules
+[19:47:10.792] Installing typings ["ffi-napi"]
+[19:47:10.792] Npm config file: /home/shane/.cache/typescript/3.2/package.json
+[19:47:10.792] Sending response:
+    {"kind":"event::beginInstallTypes","eventId":1,"typingsInstallerVersion":"3.2.2","projectName":"/dev/null/inferredProject1*"}
+[19:47:10.793] Response has been sent.
+[19:47:10.793] #1 with arguments'["@types/ffi-napi@ts3.2"]'.
+[19:47:10.793] Exec: "/usr/local/bin/npm" install --ignore-scripts @types/ffi-napi@ts3.2 --save-dev --user-agent="typesInstaller/3.2.2"
+[19:47:18.788]     Succeeded. stdout:
+    + @types/ffi-napi@2.4.3
+    added 3 packages from 2 contributors and audited 70 packages in 7.558s
+found 0 vulnerabilities
+
+
+[19:47:18.789] npm install #1 took: 7996 ms
+[19:47:18.789] Installed typings ["@types/ffi-napi@ts3.2"]
+[19:47:18.792] Installed typing files ["/home/shane/.cache/typescript/3.2/node_modules/@types/ffi-napi/index.d.ts"]
+[19:47:18.792] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":["/home/shane/.cache/typescript/3.2/node_modules/@types/ffi-napi/index.d.ts"],"unresolvedImports":["ffi-napi"],"kind":"action::set"}
+[19:47:18.792] Response has been sent.
+[19:47:18.793] Sending response:
+    {"kind":"event::endInstallTypes","eventId":1,"projectName":"/dev/null/inferredProject1*","packagesToInstall":["@types/ffi-napi@ts3.2"],"installSuccess":true,"typingsInstallerVersion":"3.2.2"}
+[19:47:18.793] Response has been sent.
+[19:47:20.447] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/.cache/typescript/3.2/node_modules/@types/ffi-napi/index.d.ts"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[19:47:20.447] Explicitly included types: []
+[19:47:20.447] Inferred typings from unresolved imports: []
+[19:47:20.447] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.447] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.448] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[19:47:20.448] Response has been sent.
+[19:47:20.448] No new typings were requested as a result of typings discovery
+[19:47:20.537] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/.cache/typescript/3.2/node_modules/@types/ffi-napi/index.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[19:47:20.537] Explicitly included types: []
+[19:47:20.538] Inferred typings from unresolved imports: []
+[19:47:20.538] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.538] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.538] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[19:47:20.538] Response has been sent.
+[19:47:20.538] No new typings were requested as a result of typings discovery
+[19:47:20.576] Got install request {"projectName":"/dev/null/inferredProject1*","fileNames":["/usr/local/lib/node_modules/typescript/lib/lib.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.es5.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.dom.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.webworker.importscripts.d.ts","/usr/local/lib/node_modules/typescript/lib/lib.scripthost.d.ts","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js"],"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typeAcquisition":{"enable":true,"include":[],"exclude":[]},"unresolvedImports":[],"projectRootPath":"/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr","kind":"discover"}
+[19:47:20.577] Explicitly included types: []
+[19:47:20.577] Inferred typings from unresolved imports: []
+[19:47:20.577] Result: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.577] Finished typings discovery: {"cachedTypingPaths":[],"newTypingNames":[],"filesToWatch":["/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/bower_components","/home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_modules"]}
+[19:47:20.577] Sending response:
+    {"projectName":"/dev/null/inferredProject1*","typeAcquisition":{"enable":true,"include":[],"exclude":[]},"compilerOptions":{"target":1,"jsx":1,"allowNonTsExtensions":true,"allowJs":true,"noEmitForJsFiles":true,"maxNodeModuleJsDepth":2},"typings":[],"unresolvedImports":[],"kind":"action::set"}
+[19:47:20.578] Response has been sent.
+[19:47:20.578] No new typings were requested as a result of typings discovery

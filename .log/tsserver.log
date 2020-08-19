@@ -1,0 +1,28 @@
+Info 0    [19:47:5.944] Starting TS Server
+Info 1    [19:47:5.944] Version: 3.2.2
+Info 2    [19:47:5.944] Arguments: /usr/local/bin/node /usr/local/bin/tsserver --logFile /home/shane/var/smulliga/source/git/mullikine/examplary/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/8b346f6b25bf9f3769134c948c2ef06b/tscancellation*
+Info 3    [19:47:5.944] Platform: linux NodeVersion: 10 CaseSensitive: true
+Info 4    [19:47:5.958] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 5    [19:47:5.960] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 6    [19:47:5.965] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 7    [19:47:10.665] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 1 structureChanged: true Elapsed: 4700ms
+Info 8    [19:47:15.985] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 9    [19:47:16.5] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 2 structureChanged: false Elapsed: 20ms
+Info 10   [19:47:19.47] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 11   [19:47:19.796] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 3 structureChanged: true Elapsed: 749ms
+Info 12   [19:47:19.797] Structure before ensureProjectForOpenFiles:
+Info 13   [19:47:19.797] Structure after ensureProjectForOpenFiles:
+Info 14   [19:47:19.797] got projects updated in background, updating diagnostics for 
+Info 15   [19:47:19.797] Search path: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr
+Info 16   [19:47:19.798] For info: /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js :: No config files found.
+Info 17   [19:47:19.799] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 18   [19:47:20.437] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 4 structureChanged: true Elapsed: 638ms
+Info 19   [19:47:20.449] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 20   [19:47:20.475] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 5 structureChanged: true Elapsed: 26ms
+Info 21   [19:47:20.570] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 22   [19:47:20.575] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 6 structureChanged: false Elapsed: 5ms
+Info 23   [19:47:20.596] Starting updateGraphWorker: Project: /dev/null/inferredProject1*
+Info 24   [19:47:20.602] Finishing updateGraphWorker: Project: /dev/null/inferredProject1* Version: 7 structureChanged: false Elapsed: 6ms
+Info 25   [19:47:20.828] Structure before ensureProjectForOpenFiles:
+Info 26   [19:47:20.829] Structure after ensureProjectForOpenFiles:
+Info 27   [19:47:20.829] got projects updated in background, updating diagnostics for /home/shane/var/smulliga/source/git/mullikine/examplary/src/xlr/node_readline.js
