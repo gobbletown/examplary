@@ -1,0 +1,93 @@
+* TODO Create/find an example-oriented DSL that can be used for NLP tasks -- so I can write code before I have the examples
+- Describe literary devices
+
+** Since it doesn't have to even function, I should simply try to find a good DSL to write in
+A typed =tcl= might be something to think about, where the type of a string is the function that created it.
+
+A lisp would be better.
+
+** TODO Make this
+*** A seq2seq example-oriented DSL for describing seq2seq tasks and building programs with them before the components are put together
+**** Example: grex -- LMs would eventually learn to do this
+It should be possible to describe the function that does what you want before it is created
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  pi4
+  pi5
+#+END_SRC
+
+#+BEGIN_SRC text -n :async :results verbatim code
+  ^pi[45]$
+#+END_SRC
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (def regex
+    "example 1\nexample2" "^example [12]$"
+    "example 2\nexample3" "^example [23]$"
+    "pi4\npi5" "^pi[45]$")
+#+END_SRC
+
+Then, in the future, something learns to do regex, such as a language model, or someone makes a program to do it.
+
+**** Literary devices. Example: generate analogies
+Analogy is both the function name and the type of the resulting string.
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (def analogy
+    ;; Each line is a training example.
+    "Neural networks" "Neural networks are like genetic algorithms in that both are systems that learn from experience"
+    "Social media" "Social media is like a market in that both are systems that coordinate the actions of many individuals.")
+
+  (def field
+    "chemistry" "study of chemicals"
+    "biology" "study of living things")
+#+END_SRC
+
+Then you can compose functions and you get
+another =seq->seq= function, which you can use
+to generate a list of analogies to do with
+botany.
+
+#+BEGIN_SRC clojure -n :i clj :async :results verbatim code
+  (analogy (field "plants"))
+#+END_SRC
+
+Or you can use it to find actual analogies for fields of study by not seeding the function at all.
+
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (analogy (field))
+#+END_SRC
+
+*** But I'd like to extend this to code as well, since seq2seq can generate code
+#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
+  (def ui
+    )
+#+END_SRC
+
+** DSL code
+
+** Python code
+#+BEGIN_SRC python -n :i python3.6 :async :results verbatim code
+  # Construct GPT object and show some examples
+  gpt = GPT(engine="davinci",
+            temperature=0.5,
+            max_tokens=100)
+  
+  gpt.add_example(Example('Neural networks are like',
+                          'genetic algorithms in that both are systems that learn from experience.'))
+  gpt.add_example(Example('Social media is like',
+                          'a market in that both are systems that coordinate the actions of many individuals.'))
+  gpt.add_example(Example(
+      'A2E is like', 'lipofuscin in that both are byproducts of the normal operation of a system.'))
+  gpt.add_example(Example('Haskell is like',
+                          'LISP in that both are functional languages.'))
+  gpt.add_example(Example('Quaternions are like',
+                          'matrices in that both are used to represent rotations in three dimensions.'))
+  gpt.add_example(Example('Quaternions are like',
+                          'octonions in that both are examples of non-commutative algebra.'))
+  
+  # Define UI configuration
+  config = UIConfig(description="Analogies generator",
+                    button_text="Generate",
+                    placeholder="Memes are like")
+#+END_SRC
