@@ -1,13 +1,13 @@
-(ns mal.core
+(ns xlr.core
   (:refer-clojure :exclude [pr-str])
   (:require [clojure.string :refer [join]]
-            [mal.readline :as readline]
-            [mal.reader :as reader]
-            [mal.printer :refer [pr-str atom?]]))
+            [xlr.readline :as readline]
+            [xlr.reader :as reader]
+            [xlr.printer :refer [pr-str atom?]]))
 
 ;; Errors/exceptions
-(defn mal_throw [obj]
-  (throw (ex-info "mal exception" {:data obj})))
+(defn xlr_throw [obj]
+  (throw (ex-info "xlr exception" {:data obj})))
 
 ;; String functions
 #?(:cljs (defn slurp [f] (.readFileSync (js/require "fs") f "utf-8")))
@@ -18,17 +18,17 @@
 
 ;; Metadata functions
 ;; - store metadata at :meta key of the real metadata
-(defn mal_with_meta [obj m]
+(defn xlr_with_meta [obj m]
   (let [new-meta (assoc (meta obj) :meta m)]
     (with-meta obj new-meta)))
 
-(defn mal_meta [obj]
+(defn xlr_meta [obj]
   (:meta (meta obj)))
 
 ;; core_ns is core namespaces functions
 (def core_ns
   [['= =]
-   ['throw mal_throw]
+   ['throw xlr_throw]
    ['nil? nil?]
    ['true? true?]
    ['false? false?]
@@ -86,8 +86,8 @@
    ['conj conj]
    ['seq (fn [obj] (seq (if (string? obj) (map str obj) obj)))]
 
-   ['with-meta mal_with_meta]
-   ['meta mal_meta]
+   ['with-meta xlr_with_meta]
+   ['meta xlr_meta]
    ['atom atom]
    ['atom? atom?]
    ['deref deref]

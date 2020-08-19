@@ -1,7 +1,7 @@
 {
-    "name": "mal",
+    "name": "xlr",
     "version": "0.0.1",
-    "description": "Make a Lisp (mal) language implemented in ClojureScript",
+    "description": "Exemplar (xlr) language implemented in ClojureScript",
     "dependencies": {
         "ffi-napi": "2.4.x",
         "lumo-cljs": "1.10.1"

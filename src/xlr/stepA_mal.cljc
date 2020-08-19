@@ -1,11 +1,11 @@
-(ns mal.step9-try
+(ns xlr.stepA-xlr
   (:refer-clojure :exclude [macroexpand])
-  (:require [mal.readline :as readline]
+  (:require [xlr.readline :as readline]
             #?(:clj [clojure.repl])
-            [mal.reader :as reader]
-            [mal.printer :as printer]
-            [mal.env :as env]
-            [mal.core :as core])
+            [xlr.reader :as reader]
+            [xlr.printer :as printer]
+            [xlr.env :as env]
+            [xlr.core :as core])
   #?(:clj (:gen-class)))
 
 ;; read
@@ -108,6 +108,14 @@
               'macroexpand
               (macroexpand a1 env)
 
+              'clj*
+              #?(:clj  (eval (reader/read-string a1))
+                 :cljs (throw (ex-info "clj* unsupported in ClojureScript mode" {})))
+
+              'js*
+              #?(:clj  (throw (ex-info "js* unsupported in Clojure mode" {}))
+                 :cljs (js->clj (js/eval a1)))
+
               'try*
               (if (= 'catch* (nth a2 0))
                 (try
@@ -172,7 +180,9 @@
 (env/env-set repl-env 'eval (fn [ast] (EVAL ast repl-env)))
 (env/env-set repl-env '*ARGV* ())
 
-;; core.mal: defined using the language itself
+;; core.xlr: defined using the language itself
+#?(:clj  (rep "(def! *host-language* \"clojure\")")
+   :cljs (rep "(def! *host-language* \"clojurescript\")"))
 (rep "(def! not (fn* [a] (if a false true)))")
 (rep "(def! load-file (fn* [f] (eval (read-string (str \"(do \" (slurp f) \"\nnil)\")))))")
 (rep "(defmacro! cond (fn* (& xs) (if (> (count xs) 0) (list 'if (first xs) (if (> (count xs) 1) (nth xs 1) (throw \"odd number of forms to cond\")) (cons 'cond (rest (rest xs)))))))")
@@ -195,4 +205,6 @@
   (env/env-set repl-env '*ARGV* (rest args))
   (if args
     (rep (str "(load-file \"" (first args) "\")"))
-    (repl-loop)))
+    (do
+      (rep "(println (str \"Mal [\" *host-language* \"]\"))")
+      (repl-loop))))

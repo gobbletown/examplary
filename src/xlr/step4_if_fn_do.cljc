@@ -1,10 +1,10 @@
-(ns mal.step6-file
-  (:require [mal.readline :as readline]
+(ns xlr.step4-if-fn-do
+  (:require [xlr.readline :as readline]
             #?(:clj [clojure.repl])
-            [mal.reader :as reader]
-            [mal.printer :as printer]
-            [mal.env :as env]
-            [mal.core :as core])
+            [xlr.reader :as reader]
+            [xlr.printer :as printer]
+            [xlr.env :as env]
+            [xlr.core :as core])
   #?(:clj (:gen-class)))
 
 ;; read
@@ -27,8 +27,7 @@
     :else         ast))
 
 (defn EVAL [ast env]
-  (loop [ast ast
-         env env]
+    ;; indented to match later steps
     ;;(prn "EVAL" ast (keys @env)) (flush)
     (if (not (seq? ast))
       (eval-ast ast env)
@@ -47,36 +46,28 @@
               (let [let-env (env/env env)]
                 (doseq [[b e] (partition 2 a1)]
                   (env/env-set let-env b (EVAL e let-env)))
-                (recur a2 let-env))
+                (EVAL a2 let-env))
 
               'do
-              (do (eval-ast (->> ast (drop-last) (drop 1)) env)
-                  (recur (last ast) env))
+              (last (eval-ast (rest ast) env))
 
               'if
               (let [cond (EVAL a1 env)]
                 (if (or (= cond nil) (= cond false))
                   (if (> (count ast) 2)
-                    (recur a3 env)
+                    (EVAL a3 env)
                     nil)
-                  (recur a2 env)))
+                  (EVAL a2 env)))
 
               'fn*
-              (with-meta
-                (fn [& args]
-                  (EVAL a2 (env/env env a1 (or args '()))))
-                {:expression a2
-                 :environment env
-                 :parameters a1})
+              (fn [& args]
+                (EVAL a2 (env/env env a1 (or args '()))))
 
               ;; apply
               (let [el (eval-ast ast env)
                     f (first el)
-                    args (rest el)
-                    {:keys [expression environment parameters]} (meta f)]
-                (if expression
-                  (recur expression (env/env environment parameters args))
-                  (apply f args))))))))
+                    args (rest el)]
+                (apply f args))))))
 
 ;; print
 (defn PRINT [exp] (printer/pr-str exp))
@@ -89,12 +80,9 @@
 
 ;; core.clj: defined using Clojure
 (doseq [[k v] core/core_ns] (env/env-set repl-env k v))
-(env/env-set repl-env 'eval (fn [ast] (EVAL ast repl-env)))
-(env/env-set repl-env '*ARGV* ())
 
-;; core.mal: defined using the language itself
+;; core.xlr: defined using the language itself
 (rep "(def! not (fn* [a] (if a false true)))")
-(rep "(def! load-file (fn* [f] (eval (read-string (str \"(do \" (slurp f) \"\nnil)\")))))")
 
 ;; repl loop
 (defn repl-loop []
@@ -108,7 +96,4 @@
       (recur))))
 
 (defn -main [& args]
-  (env/env-set repl-env '*ARGV* (rest args))
-  (if args
-    (rep (str "(load-file \"" (first args) "\")"))
-    (repl-loop)))
+  (repl-loop))

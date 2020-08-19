@@ -1,10 +1,10 @@
-(ns mal.readline
+(ns xlr.readline
     (:require [clojure.string :refer [split]]
               [clojure.java.io :refer [file]]
               [net.n01se.clojure-jna :as jna]))
 
 (defonce history-loaded (atom nil))
-(def HISTORY-FILE (str (System/getProperty "user.home") "/.mal-history"))
+(def HISTORY-FILE (str (System/getProperty "user.home") "/.xlr-history"))
 
 ;;
 ;; Uncomment one of the following readline libraries

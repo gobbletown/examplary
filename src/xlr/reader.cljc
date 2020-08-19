@@ -1,4 +1,4 @@
-(ns mal.reader
+(ns xlr.reader
   (:refer-clojure :exclude [read-string])
   (:require [clojure.string :as S]))
 

@@ -1,5 +1,5 @@
-(ns mal.step0-repl
-  (:require [mal.readline :as readline])
+(ns xlr.step0-repl
+  (:require [xlr.readline :as readline])
   #?(:clj (:gen-class)))
 
 ;; read

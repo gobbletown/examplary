@@ -1,10 +1,10 @@
-(ns mal.step5-tco
-  (:require [mal.readline :as readline]
+(ns xlr.step5-tco
+  (:require [xlr.readline :as readline]
             #?(:clj [clojure.repl])
-            [mal.reader :as reader]
-            [mal.printer :as printer]
-            [mal.env :as env]
-            [mal.core :as core])
+            [xlr.reader :as reader]
+            [xlr.printer :as printer]
+            [xlr.env :as env]
+            [xlr.core :as core])
   #?(:clj (:gen-class)))
 
 ;; read
@@ -90,7 +90,7 @@
 ;; core.clj: defined using Clojure
 (doseq [[k v] core/core_ns] (env/env-set repl-env k v))
 
-;; core.mal: defined using the language itself
+;; core.xlr: defined using the language itself
 (rep "(def! not (fn* [a] (if a false true)))")
 
 ;; repl loop

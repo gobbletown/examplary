@@ -14,8 +14,8 @@ RUN apt-get -y install make python
 # Some typical implementation and test requirements
 RUN apt-get -y install curl libreadline-dev libedit-dev
 
-RUN mkdir -p /mal
-WORKDIR /mal
+RUN mkdir -p /xlr
+WORKDIR /xlr
 
 ##########################################################
 # Specific implementation requirements
@@ -30,8 +30,8 @@ RUN apt-get -y install openjdk-8-jdk
 ADD https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein \
     /usr/local/bin/lein
 RUN chmod 0755 /usr/local/bin/lein
-ENV LEIN_HOME /mal/.lein
-ENV LEIN_JVM_OPTS -Duser.home=/mal
+ENV LEIN_HOME /xlr/.lein
+ENV LEIN_JVM_OPTS -Duser.home=/xlr
 
 #
 # ClojureScript (Node and Lumo)
@@ -47,10 +47,10 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 # Install nodejs
 RUN apt-get -y install nodejs
 
-ENV NPM_CONFIG_CACHE /mal/.npm
+ENV NPM_CONFIG_CACHE /xlr/.npm
 
 ## Install ffi and lumo-cljs modules globally
 #RUN npm install -g ffi lumo-cljs
 
-ENV HOME=/mal
+ENV HOME=/xlr
 

@@ -1,8 +1,8 @@
-(ns mal.step1-read-print
-  (:require [mal.readline :as readline]
+(ns xlr.step1-read-print
+  (:require [xlr.readline :as readline]
             #?(:clj [clojure.repl])
-            [mal.reader :as reader]
-            [mal.printer :as printer])
+            [xlr.reader :as reader]
+            [xlr.printer :as printer])
   #?(:clj (:gen-class)))
 
 ;; read

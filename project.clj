@@ -1,4 +1,4 @@
-(defproject mal "0.0.1-SNAPSHOT"
+(defproject xlr "0.0.1-SNAPSHOT"
   :description "Make-A-Lisp"
 
   :dependencies [[org.clojure/clojure "1.10.0"]
@@ -8,37 +8,37 @@
   ;;   lein trampoline with-profile stepX run
   ;; To generate a executable uberjar (in target/) for a step:
   ;;   lein with-profile stepX repl
-  :profiles {:step0 {:main mal.step0-repl
+  :profiles {:step0 {:main xlr.step0-repl
                      :uberjar-name "step0_repl.jar"
-                     :aot [mal.step0-repl]}
-             :step1 {:main mal.step1-read-print
+                     :aot [xlr.step0-repl]}
+             :step1 {:main xlr.step1-read-print
                      :uberjar-name "step1_read_print.jar"
-                     :aot [mal.step1-read-print]}
-             :step2 {:main mal.step2-eval
+                     :aot [xlr.step1-read-print]}
+             :step2 {:main xlr.step2-eval
                      :uberjar-name "step2_eval.jar"
-                     :aot [mal.step2-eval]}
-             :step3 {:main mal.step3-env
+                     :aot [xlr.step2-eval]}
+             :step3 {:main xlr.step3-env
                      :uberjar-name "step3_env.jar"
-                     :aot [mal.step3-env]}
-             :step4 {:main mal.step4-if-fn-do
+                     :aot [xlr.step3-env]}
+             :step4 {:main xlr.step4-if-fn-do
                      :uberjar-name "step4_if_fn_do.jar"
-                     :aot [mal.step4-if-fn-do]}
-             :step5 {:main mal.step5-tco
+                     :aot [xlr.step4-if-fn-do]}
+             :step5 {:main xlr.step5-tco
                      :uberjar-name "step5_tco.jar"
-                     :aot [mal.step5-tco]}
-             :step6 {:main mal.step6-file
+                     :aot [xlr.step5-tco]}
+             :step6 {:main xlr.step6-file
                      :uberjar-name "step6_file.jar"
-                     :aot [mal.step6-file]}
-             :step7 {:main mal.step7-quote
+                     :aot [xlr.step6-file]}
+             :step7 {:main xlr.step7-quote
                      :uberjar-name "step7_quote.jar"
-                     :aot [mal.step7-quote]}
-             :step8 {:main mal.step8-macros
+                     :aot [xlr.step7-quote]}
+             :step8 {:main xlr.step8-macros
                      :uberjar-name "step8_macros.jar"
-                     :aot [mal.step8-macros]}
-             :step9 {:main mal.step9-try
+                     :aot [xlr.step8-macros]}
+             :step9 {:main xlr.step9-try
                      :uberjar-name "step9_try.jar"
-                     :aot [mal.step9-try]}
-             :stepA {:main mal.stepA-mal
-                     :uberjar-name "stepA_mal.jar"
-                     :aot [mal.stepA-mal]}})
+                     :aot [xlr.step9-try]}
+             :stepA {:main xlr.stepA-xlr
+                     :uberjar-name "stepA_xlr.jar"
+                     :aot [xlr.stepA-xlr]}})
 
