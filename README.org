@@ -1,4 +1,4 @@
-* Exemplar - An example-oriented DSL that can be used for NLP tasks
+* =exemplary= - An example-oriented DSL that can be used for NLP tasks
 - Write code declaratively for functions that don't exist yet
 - Describe literary devices
 - seq2sesq
@@ -59,14 +59,11 @@ Or you can use it to find actual analogies for fields of study by not seeding th
   (analogy (field))
 #+END_SRC
 
-*** But I'd like to extend this to code as well, since seq2seq can generate code
-#+BEGIN_SRC emacs-lisp -n :async :results verbatim code
-  (def ui
-    )
-#+END_SRC
+** Future
+Extend this to code as well, since =seq2seq= can generate code.
 
 ** Compiler targets
-*** OpenAI Api requests
+*** OpenAI API requests
 *** GPT-2 (Python, maybe)
 
 ** Python code
