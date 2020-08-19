@@ -1,15 +1,15 @@
 * Exemplar - An example-oriented DSL that can be used for NLP tasks
 - Write code declaratively for functions that don't exist yet
 - Describe literary devices
+- seq2sesq
+- example-oriented
+- describing seq2seq tasks
+- prototyping language that uses seq2seq to approximate tasks
 
-** Since it doesn't have to even function, I should simply try to find a good DSL to write in
-A typed =tcl= might be something to think about, where the type of a string is the function that created it.
+** Thoughts
+- Lisp > TCL, since types may be added later
 
-A lisp would be better.
-
-** TODO Make this
-*** A seq2seq example-oriented DSL for describing seq2seq tasks and building programs with them before the components are put together
-**** Example: grex -- LMs would eventually learn to do this
+*** Example: grex -- LMs would eventually learn to do this
 It should be possible to describe the function that does what you want before it is created
 
 #+BEGIN_SRC text -n :async :results verbatim code
