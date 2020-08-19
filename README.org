@@ -99,9 +99,7 @@ Extend this to code as well, since =seq2seq= can generate code.
 ** Clojure library
 Develop a clojure library in conjunction with this DSL.
 
-** What works
-What works:
-
+** What is known to work in the DSL so far
 #+BEGIN_SRC clojure -n :i clj :async :results verbatim code
   (cons 4 '(1 2 3))
   (str "Hello" " " "World")
