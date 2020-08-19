@@ -5,4 +5,5 @@ xlr.jar
 .rebel_readline_history
 .bash_history
 .lsp/
+.log/
 target/
