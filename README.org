@@ -7,7 +7,8 @@
 - prototyping language that uses seq2seq to approximate tasks
 - compile to
   - OpenAPI requests
-  - LM requests
+  - Direct LM requests
+    - Spacy
 
 ** Thoughts
 - Lisp > TCL, since types may be added later
