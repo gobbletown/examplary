@@ -66,6 +66,9 @@ Or you can use it to find actual analogies for fields of study by not seeding th
 
 ** DSL code
 
+** Transpiler targets
+*** Python + GPT-3
+
 ** Python code
 #+BEGIN_SRC python -n :i python3.6 :async :results verbatim code
   # Construct GPT object and show some examples
