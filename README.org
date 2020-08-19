@@ -1,4 +1,4 @@
-* =examplary= - An example-oriented DSL that can be used for NLP tasks
+* =examplary= - An example-oriented DSL that can be used to construct and compose NLP tasks
 - Write code declaratively for functions that don't exist yet
 - Describe literary devices
 - seq2sesq
