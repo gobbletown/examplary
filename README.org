@@ -96,6 +96,9 @@ Extend this to code as well, since =seq2seq= can generate code.
                     placeholder="Memes are like")
 #+END_SRC
 
+** Clojure library
+Develop a clojure library in conjunction with this DSL.
+
 ** What works
 What works:
 
