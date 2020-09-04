@@ -1,0 +1,7 @@
+00~(coll? '(1 2 3))01~
+(coll? '(1 2 3))
+(range 4)
+00~(class [1 2 3])01~
+(class [1 2 3])
+1.
+(class (class 1))
