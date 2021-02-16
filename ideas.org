@@ -48,8 +48,6 @@ this is the best ive found
 
 also, havent found yet any website which organises them
 
-anyway, gave u access to the repository. itd be cool if u want to work on it together. im currently just trying to curate a bunch of prompts and get some kind of emacs prototype going
-
 if it's lisp-like then the DSL can be used inside emacs easily
 
 it would also make it super easy to create it
