@@ -1,0 +1,200 @@
+"a1b8c32e68b381b8ac8d1ee30ca1270a79631c90"
+#s(undo-tree [nil (#31=[nil nil ((1 . 5275) (#("https://github.com/mullikine/examplary
+i wanted to do this like 6 months ago
+a compiler for gpt-3 prompts
+the idea is to compose prompts
+compose prompts using a DSL, it generates a prompt which is like natural language but , like a 'repeat after me' command
+somehow the dsl must encapsulate things like, using question-answer pairs,
+and allegory
+and doing that more efficiently and more structurally than simply remembering those rules
+, so the dsl makes it easier to design prompts, and it simply rolls it all together into a prompt, which is essentially just a string which is then sent to the API
+the API cant return per-token probabilties and have some other settings
+http://github.com/mullikine/glossaries-gh/blob/master/openai.txt
+https://storage.googleapis.com/gcs-vuse/prompt-design.html
+so the API streams text to you
+you give it a prompt and then set the 'stop sequence'
+when it generates the stop sequence, it stops
+the prompt is the input text, it tries to continue the text until it generates the stop sequence
+there can be multiple stop sequences
+that in itself would need to be encoded into the DSL somehow
+the DSL should let you not only design the prompt, but compose prompts together, prompts within prompts
+one prompt per function, so functions are designed by using prompts
+so you functions can be composed of other functions, or functions which are essentially prompts
+there isnt a single repository online which has yet found a way to orgnise prompts effectively
+https://github.com/wgryc/gpt3-prompts
+this is the best ive found
+also, havent found yet any website which organises them
+anyway, gave u access to the repository. itd be cool if u want to work on it together. im currently just trying to curate a bunch of prompts and get some kind of emacs prototype going
+if it's lisp-like then the DSL can be used inside emacs easily
+it would also make it super easy to create it
+the easiest first step is simply curating prompts in an organised way
+putting the prompts into a database in a format which also has the settings for the prompt.
+temperature, a float value from 0-1 is the creativity level
+that is part of a prompt. so a prompt is a string together with the settings, such as start, stop, restart sequences and temperature
+it could be a yaml file together with some settings. that would work, i guess, a lot like a tenet, i guess
+its a lot simpler
+the yaml file would only describe prompts, the DSL would be completely separate from that
+the DSL is just listp functions. very easy, dont even need to build anything. would take 2 seconds
+ill try to put these example prompts into a git repository
+so what's important to figure out in the DSL is its objectives, such as that distinction i just made between yaml files and the DSL
+the DSL should compile to a sequence of requests to the API
+not just sequences, but should have the ability to poll for more user input
+so a little interactivity as its executing would be nice
+maybe. but that maybe can come later. the first steps would be to curate prompts and then see if they can be composed to make bigger prompts
+and if prompts can be composed more easily (ie. generate QA pairs) using the DSL to generate prompts
+a prompt can be generated (to make a new prompt-function) or can be used in an existing prompt. a prompt is essentially just a function, but theres not really any DSL yet to describe how to compose them and build bigger programs with them
+or to generate prompts from non-prompt string literals.
+i guess the design is the hardest part. the rest is just creating macros
+designing a DSL to generate prompts, and essentially maintain libraries of prompt functions
+because prompt-engineering is going to become pretty big in the future i think
+The DSL is always used to generate prompts. The output of the API would be considered to be another prompt which can be used. GPT-3 can be used to generate GPT-3 prompts. That's pretty ridiculous, but true
+maybe there can be a prompt description file, which is loaded into an object as a convenience. Due to the homoiconicity of lisp, there would also be a () representation of the object
+the prompt description file would be yaml, i guess
+but composing prompts would all be done in lisp to make it trivial
+GPT-4 is on its way.... and im guessing that when its announced in a few months, people will be able to showcase their GPT-3 stuff
+at the moment theres a moratorium on that
+so we don't really know what's out there
+i have no idea how to monetise this
+or get funding or anything like that
+it might be cool to reward people who contribute to the prompts library when their prompts are used
+and there could be a service based on ocean protocol which means that people dont need to reveal their secret prompts when they want to execute the prompts
+if those prompts rely on other prompt libraries
+this is making me think i should move my eth to streamr after i sell streamr for eth
+move my eth to ocean, i mean
+http://github.com/mullikine/emacs-openai-api-playground/blob/master/design.org
+im making an emacs playground atm
+its gonna be the best openai playground :P
+i think i could beat basically anything thats out there
+but having a DSL to compliment it would be awesome" 0 37 (help-echo #4="LINK: https://github.com/mullikine/examplary" htmlize-link #3=(:uri "https://github.com/mullikine/examplary") fontified t wrap-prefix #1="" face org-link mouse-face highlight keymap #2=(keymap (follow-link . mouse-face) (mouse-3 . org-find-file-at-mouse) (mouse-2 . org-open-at-mouse)) font-lock-multiline t) 37 38 (rear-nonsticky #8=(mouse-face highlight keymap invisible intangible help-echo org-linked-text htmlize-link) help-echo #4# htmlize-link #3# fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 38 39 (fontified t wrap-prefix #1#) 39 76 (fontified t wrap-prefix #1# insert-in-front-hooks #5=(annotate--remove-annotation-property)) 76 77 (fontified t wrap-prefix #1# display nil face default insert-in-front-hooks #5#) 77 106 (fontified t wrap-prefix #1#) 106 137 (fontified t wrap-prefix #1#) 137 258 (fontified t wrap-prefix #1#) 258 333 (fontified t wrap-prefix #1#) 333 346 (fontified t wrap-prefix #1#) 346 436 (fontified t wrap-prefix #1#) 436 500 (fontified t wrap-prefix #1#) 500 600 (fontified t wrap-prefix #1#) 600 672 (fontified t wrap-prefix #1#) 672 735 (help-echo #7="LINK: http://github.com/mullikine/glossaries-gh/blob/master/openai.txt" htmlize-link #6=(:uri "http://github.com/mullikine/glossaries-gh/blob/master/openai.txt") fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 735 736 (rear-nonsticky #8# help-echo #7# htmlize-link #6# fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 736 737 (fontified t wrap-prefix #1#) 737 794 (help-echo #10="LINK: https://storage.googleapis.com/gcs-vuse/prompt-design.html" htmlize-link #9=(:uri "https://storage.googleapis.com/gcs-vuse/prompt-design.html") fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 794 795 (rear-nonsticky #8# help-echo #10# htmlize-link #9# fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 795 796 (fontified t wrap-prefix #1#) 796 827 (fontified t wrap-prefix #1#) 827 881 (fontified t wrap-prefix #1#) 881 927 (fontified t wrap-prefix #1#) 927 1024 (fontified t wrap-prefix #1#) 1024 1061 (fontified t wrap-prefix #1#) 1061 1100 (fontified t wrap-prefix #1#) 1100 1122 (fontified t wrap-prefix #1#) 1122 1226 (fontified t wrap-prefix #1#) 1226 1294 (fontified t wrap-prefix #1#) 1294 1390 (fontified t wrap-prefix #1#) 1390 1485 (fontified t wrap-prefix #1#) 1485 1521 (help-echo #12="LINK: https://github.com/wgryc/gpt3-prompts" htmlize-link #11=(:uri "https://github.com/wgryc/gpt3-prompts") fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 1521 1522 (rear-nonsticky #8# help-echo #12# htmlize-link #11# fontified t wrap-prefix #1# face org-link mouse-face highlight keymap #2# font-lock-multiline t) 1522 1523 (fontified t wrap-prefix #1#) 1523 1550 (fontified t wrap-prefix #1#) 1550 1606 (fontified t wrap-prefix #1#) 1606 1622 (fontified t wrap-prefix #1#) 1622 1790 (fontified t wrap-prefix #1#) 1790 1853 (fontified t wrap-prefix #1#) 1853 1899 (fontified t wrap-prefix #1#) 1899 1969 (fontified t wrap-prefix #1#) 1969 2061 (fontified t wrap-prefix #1#) 2061 2121 (fontified t wrap-prefix #1#) 2121 2254 (fontified t wrap-prefix #1#) 2254 2290 (fontified t wrap-prefix #1#) 2290 2361 (fontified t wrap-prefix #1#) 2361 2379 (fontified nil wrap-prefix #1#) 2379 2469 (fontified nil wrap-prefix #1#) 2469 2568 (fontified nil wrap-prefix #1#) 2568 2627 (fontified nil wrap-prefix #1#) 2627 2759 (fontified nil wrap-prefix #1#) 2759 2819 (fontified nil wrap-prefix #1#) 2819 2861 (fontified nil wrap-prefix #1#) 2861 2895 (fontified nil wrap-prefix #1#) 2895 2952 (fontified nil wrap-prefix #1#) 2952 3093 (fontified nil wrap-prefix #1#) 3093 3194 (fontified nil wrap-prefix #1#) 3194 3395 (fontified nil wrap-prefix #1#) 3395 3433 (fontified nil wrap-prefix #1#) 3433 3489 (fontified nil wrap-prefix #1#) 3489 3562 (fontified nil wrap-prefix #1#) 3562 3654 (fontified nil wrap-prefix #1#) 3654 3733 (fontified nil wrap-prefix #1#) 3733 3933 (fontified nil wrap-prefix #1#) 3933 3939 (fontified nil wrap-prefix #1#) 3939 4122 (fontified nil wrap-prefix #1#) 4122 4173 (fontified nil wrap-prefix #1#) 4173 4240 (fontified nil wrap-prefix #1#) 4240 4371 (fontified nil wrap-prefix #1#) 4371 4413 (fontified nil wrap-prefix #1#) 4413 4439 (fontified nil wrap-prefix #1#) 4439 4454 (fontified nil wrap-prefix #1#) 4454 4490 (fontified nil wrap-prefix #1#) 4490 4527 (fontified nil wrap-prefix #1#) 4527 4627 (fontified nil wrap-prefix #1#) 4627 4783 (fontified nil wrap-prefix #1#) 4783 4831 (fontified nil wrap-prefix #1#) 4831 4916 (fontified nil wrap-prefix #1#) 4916 4945 (fontified nil wrap-prefix #1#) 4945 4954 (help-echo #14="LINK: http://github.com/mullikine/emacs-openai-api-playground/blob/master/design.org" htmlize-link #13=(:uri "http://github.com/mullikine/emacs-openai-api-playground/blob/master/design.org") fontified nil face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 4954 5022 (help-echo #14# htmlize-link #13# fontified nil face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 5022 5023 (rear-nonsticky #8# help-echo #14# htmlize-link #13# fontified nil face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 5023 5024 (fontified nil wrap-prefix #1#) 5024 5058 (fontified nil wrap-prefix #1#) 5058 5101 (fontified nil wrap-prefix #1#) 5101 5157 (fontified nil wrap-prefix #1#) 5157 5207 (fontified nil wrap-prefix #1#)) . 1) (undo-tree-id18 . -4490) (undo-tree-id19 . -4490) (undo-tree-id20 . -5207) (undo-tree-id21 . -39) (undo-tree-id22 . -4490) (undo-tree-id23 . -4945) (undo-tree-id24 . -5207) (undo-tree-id25 . -5207) (undo-tree-id26 . -737) (undo-tree-id27 . -742) (undo-tree-id28 . -1485) (undo-tree-id29 . -1490) (undo-tree-id30 . -5207) (t 24619 42028 321929 976000)) nil (24619 42137 778363 407000) 0 nil] [nil nil ((1 . 5275) (#("https://github.com/mullikine/examplary
+i wanted to do this like 6 months ago
+a compiler for gpt-3 prompts
+the idea is to compose prompts
+compose prompts using a DSL, it generates a prompt which is like natural language but , like a 'repeat after me' command
+somehow the dsl must encapsulate things like, using question-answer pairs,
+and allegory
+and doing that more efficiently and more structurally than simply remembering those rules
+, so the dsl makes it easier to design prompts, and it simply rolls it all together into a prompt, which is essentially just a string which is then sent to the API
+the API cant return per-token probabilties and have some other settings
+http://github.com/mullikine/glossaries-gh/blob/master/openai.txt
+https://storage.googleapis.com/gcs-vuse/prompt-design.html
+so the API streams text to you
+you give it a prompt and then set the 'stop sequence'
+when it generates the stop sequence, it stops
+the prompt is the input text, it tries to continue the text until it generates the stop sequence
+there can be multiple stop sequences
+that in itself would need to be encoded into the DSL somehow
+the DSL should let you not only design the prompt, but compose prompts together, prompts within prompts
+one prompt per function, so functions are designed by using prompts
+so you functions can be composed of other functions, or functions which are essentially prompts
+there isnt a single repository online which has yet found a way to orgnise prompts effectively
+https://github.com/wgryc/gpt3-prompts
+this is the best ive found
+also, havent found yet any website which organises them
+anyway, gave u access to the repository. itd be cool if u want to work on it together. im currently just trying to curate a bunch of prompts and get some kind of emacs prototype going
+if it's lisp-like then the DSL can be used inside emacs easily
+it would also make it super easy to create it
+the easiest first step is simply curating prompts in an organised way
+putting the prompts into a database in a format which also has the settings for the prompt.
+temperature, a float value from 0-1 is the creativity level
+that is part of a prompt. so a prompt is a string together with the settings, such as start, stop, restart sequences and temperature
+it could be a yaml file together with some settings. that would work, i guess, a lot like a tenet, i guess
+its a lot simpler
+the yaml file would only describe prompts, the DSL would be completely separate from that
+the DSL is just listp functions. very easy, dont even need to build anything. would take 2 seconds
+ill try to put these example prompts into a git repository
+so what's important to figure out in the DSL is its objectives, such as that distinction i just made between yaml files and the DSL
+the DSL should compile to a sequence of requests to the API
+not just sequences, but should have the ability to poll for more user input
+so a little interactivity as its executing would be nice
+maybe. but that maybe can come later. the first steps would be to curate prompts and then see if they can be composed to make bigger prompts
+and if prompts can be composed more easily (ie. generate QA pairs) using the DSL to generate prompts
+a prompt can be generated (to make a new prompt-function) or can be used in an existing prompt. a prompt is essentially just a function, but theres not really any DSL yet to describe how to compose them and build bigger programs with them
+or to generate prompts from non-prompt string literals.
+i guess the design is the hardest part. the rest is just creating macros
+designing a DSL to generate prompts, and essentially maintain libraries of prompt functions
+because prompt-engineering is going to become pretty big in the future i think
+The DSL is always used to generate prompts. The output of the API would be considered to be another prompt which can be used. GPT-3 can be used to generate GPT-3 prompts. That's pretty ridiculous, but true
+maybe there can be a prompt description file, which is loaded into an object as a convenience. Due to the homoiconicity of lisp, there would also be a () representation of the object
+the prompt description file would be yaml, i guess
+but composing prompts would all be done in lisp to make it trivial
+GPT-4 is on its way.... and im guessing that when its announced in a few months, people will be able to showcase their GPT-3 stuff
+at the moment theres a moratorium on that
+so we don't really know what's out there
+i have no idea how to monetise this
+or get funding or anything like that
+it might be cool to reward people who contribute to the prompts library when their prompts are used
+and there could be a service based on ocean protocol which means that people dont need to reveal their secret prompts when they want to execute the prompts
+if those prompts rely on other prompt libraries
+this is making me think i should move my eth to streamr after i sell streamr for eth
+move my eth to ocean, i mean
+http://github.com/mullikine/emacs-openai-api-playground/blob/master/design.org
+im making an emacs playground atm
+its gonna be the best openai playground :P
+i think i could beat basically anything thats out there
+but having a DSL to compliment it would be awesome" 0 37 (help-echo #16="LINK: https://github.com/mullikine/examplary" htmlize-link #15=(:uri "https://github.com/mullikine/examplary") fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 37 38 (rear-nonsticky #8# help-echo #16# htmlize-link #15# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 38 39 (fontified t wrap-prefix #1#) 39 77 (fontified t wrap-prefix #1#) 77 106 (fontified t wrap-prefix #1#) 106 137 (fontified t wrap-prefix #1#) 137 258 (fontified t wrap-prefix #1#) 258 333 (fontified t wrap-prefix #1#) 333 346 (fontified t wrap-prefix #1#) 346 436 (fontified t wrap-prefix #1#) 436 500 (fontified t wrap-prefix #1#) 500 600 (fontified t wrap-prefix #1#) 600 672 (fontified t wrap-prefix #1#) 672 735 (help-echo #18="LINK: http://github.com/mullikine/glossaries-gh/blob/master/openai.txt" htmlize-link #17=(:uri "http://github.com/mullikine/glossaries-gh/blob/master/openai.txt") fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 735 736 (rear-nonsticky #8# help-echo #18# htmlize-link #17# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 736 737 (fontified t wrap-prefix #1#) 737 794 (help-echo #20="LINK: https://storage.googleapis.com/gcs-vuse/prompt-design.html" htmlize-link #19=(:uri "https://storage.googleapis.com/gcs-vuse/prompt-design.html") fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 794 795 (rear-nonsticky #8# help-echo #20# htmlize-link #19# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 795 796 (fontified t wrap-prefix #1#) 796 827 (fontified t wrap-prefix #1#) 827 881 (fontified t wrap-prefix #1#) 881 927 (fontified t wrap-prefix #1#) 927 1024 (fontified t wrap-prefix #1#) 1024 1061 (fontified t wrap-prefix #1#) 1061 1100 (fontified t wrap-prefix #1#) 1100 1122 (fontified t wrap-prefix #1#) 1122 1226 (fontified t wrap-prefix #1#) 1226 1294 (fontified t wrap-prefix #1#) 1294 1390 (fontified t wrap-prefix #1#) 1390 1485 (fontified t wrap-prefix #1#) 1485 1521 (help-echo #22="LINK: https://github.com/wgryc/gpt3-prompts" htmlize-link #21=(:uri "https://github.com/wgryc/gpt3-prompts") fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 1521 1522 (rear-nonsticky #8# help-echo #22# htmlize-link #21# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 1522 1523 (fontified t wrap-prefix #1#) 1523 1550 (fontified t wrap-prefix #1#) 1550 1606 (fontified t wrap-prefix #1#) 1606 1622 (fontified t wrap-prefix #1#) 1622 1790 (fontified t wrap-prefix #1#) 1790 1853 (fontified t wrap-prefix #1#) 1853 1899 (fontified t wrap-prefix #1#) 1899 1969 (fontified t wrap-prefix #1#) 1969 2061 (fontified t wrap-prefix #1#) 2061 2121 (fontified t wrap-prefix #1#) 2121 2254 (fontified t wrap-prefix #1#) 2254 2290 (fontified t wrap-prefix #1#) 2290 2361 (fontified t wrap-prefix #1#) 2361 2379 (fontified t wrap-prefix #1#) 2379 2469 (fontified t wrap-prefix #1#) 2469 2568 (fontified t wrap-prefix #1#) 2568 2627 (fontified t wrap-prefix #1#) 2627 2759 (fontified t wrap-prefix #1#) 2759 2819 (fontified t wrap-prefix #1#) 2819 2861 (fontified t wrap-prefix #1#) 2861 2895 (fontified t wrap-prefix #1#) 2895 2952 (fontified t wrap-prefix #1#) 2952 3093 (fontified t wrap-prefix #1#) 3093 3194 (fontified t wrap-prefix #1#) 3194 3395 (fontified t wrap-prefix #1#) 3395 3433 (fontified t wrap-prefix #1#) 3433 3489 (fontified t wrap-prefix #1#) 3489 3562 (fontified t wrap-prefix #1#) 3562 3654 (fontified t wrap-prefix #1#) 3654 3733 (fontified t wrap-prefix #1#) 3733 3933 (fontified t wrap-prefix #1#) 3933 3939 (fontified t wrap-prefix #1#) 3939 4122 (fontified t wrap-prefix #1#) 4122 4173 (fontified t wrap-prefix #1#) 4173 4240 (fontified t wrap-prefix #1#) 4240 4371 (fontified t wrap-prefix #1#) 4371 4413 (fontified t wrap-prefix #1#) 4413 4439 (fontified t wrap-prefix #1#) 4439 4454 (fontified t wrap-prefix #1#) 4454 4490 (fontified t wrap-prefix #1#) 4490 4527 (fontified t wrap-prefix #1#) 4527 4627 (fontified t wrap-prefix #1#) 4627 4783 (fontified t wrap-prefix #1#) 4783 4831 (fontified t wrap-prefix #1#) 4831 4916 (fontified t wrap-prefix #1#) 4916 4945 (fontified t wrap-prefix #1#) 4945 4954 (help-echo #14# htmlize-link #13# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 4954 5022 (help-echo #14# htmlize-link #13# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 5022 5023 (rear-nonsticky #8# help-echo #14# htmlize-link #13# fontified t face org-link mouse-face highlight keymap #2# font-lock-multiline t wrap-prefix #1#) 5023 5024 (fontified t wrap-prefix #1#) 5024 5058 (fontified t wrap-prefix #1#) 5058 5101 (fontified t wrap-prefix #1#) 5101 5157 (fontified t wrap-prefix #1#) 5157 5207 (fontified t wrap-prefix #1#)) . 1) (undo-tree-id0 . -4490) (undo-tree-id1 . -4490) (undo-tree-id2 . -5207) (undo-tree-id3 . -39) (undo-tree-id4 . -4490) (undo-tree-id5 . -4945) (undo-tree-id6 . -5207) (undo-tree-id7 . -737) (undo-tree-id8 . -742) (undo-tree-id9 . -1485) (undo-tree-id10 . -1490) (undo-tree-id11 . -5207) (t 24619 42028 321929 976000)) ((1 . 5208) (#("https://github.com/mullikine/examplary
+i wanted to do this like 6 months ago
+a compiler for gpt-3 prompts
+the idea is to compose prompts
+compose prompts using a DSL, it generates a prompt which is like natural language but , like a 'repeat after me' command
+somehow the dsl must encapsulate things like, using question-answer pairs,
+and allegory
+and doing that more efficiently and more structurally than simply remembering those rules
+, so the dsl makes it easier to design prompts, and it simply rolls it all together into a prompt, which is essentially just a string which is then sent to the API
+the API cant return per-token probabilties and have some other settings
+http://github.com/mullikine/glossaries-gh/blob/master/openai.txt
+https://storage.googleapis.com/gcs-vuse/prompt-design.html
+so the API streams text to you
+you give it a prompt and then set the 'stop sequence'
+when it generates the stop sequence, it stops
+the prompt is the input text, it tries to continue the text until it generates the stop sequence
+there can be multiple stop sequences
+that in itself would need to be encoded into the DSL somehow
+the DSL should let you not only design the prompt, but compose prompts together, prompts within prompts
+one prompt per function, so functions are designed by using prompts
+so you functions can be composed of other functions, or functions which are essentially prompts
+there isnt a single repository online which has yet found a way to orgnise prompts effectively
+https://github.com/wgryc/gpt3-prompts
+this is the best ive found
+also, havent found yet any website which organises them
+anyway, gave u access to the repository. itd be cool if u want to work on it together. im currently just trying to curate a bunch of prompts and get some kind of emacs prototype going
+if it's lisp-like then the DSL can be used inside emacs easily
+it would also make it super easy to create it
+the easiest first step is simply curating prompts in an organised way
+putting the prompts into a database in a format which also has the settings for the prompt.
+temperature, a float value from 0-1 is the creativity level
+that is part of a prompt. so a prompt is a string together with the settings, such as start, stop, restart sequences and temperature
+it could be a yaml file together with some settings. that would work, i guess, a lot like a tenet, i guess
+its a lot simpler
+the yaml file would only describe prompts, the DSL would be completely separate from that
+the DSL is just listp functions. very easy, dont even need to build anything. would take 2 seconds
+ill try to put these example prompts into a git repository
+so what's important to figure out in the DSL is its objectives, such as that distinction i just made between yaml files and the DSL
+the DSL should compile to a sequence of requests to the API
+not just sequences, but should have the ability to poll for more user input
+so a little interactivity as its executing would be nice
+maybe. but that maybe can come later. the first steps would be to curate prompts and then see if they can be composed to make bigger prompts
+and if prompts can be composed more easily (ie. generate QA pairs) using the DSL to generate prompts
+a prompt can be generated (to make a new prompt-function) or can be used in an existing prompt. a prompt is essentially just a function, but theres not really any DSL yet to describe how to compose them and build bigger programs with them
+or to generate prompts from non-prompt string literals.
+i guess the design is the hardest part. the rest is just creating macros
+designing a DSL to generate prompts, and essentially maintain libraries of prompt functions
+because prompt-engineering is going to become pretty big in the future i think
+The DSL is always used to generate prompts. The output of the API would be considered to be another prompt which can be used. GPT-3 can be used to generate GPT-3 prompts. That's pretty ridiculous, but true
+maybe there can be a prompt description file, which is loaded into an object as a convenience. Due to the homoiconicity of lisp, there would also be a () representation of the object
+the prompt description file would be yaml, i guess
+but composing prompts would all be done in lisp to make it trivial
+GPT-4 is on its way.... and im guessing that when its announced in a few months, people will be able to showcase their GPT-3 stuff
+at the moment theres a moratorium on that
+so we don't really know what's out there
+i have no idea how to monetise this
+or get funding or anything like that
+it might be cool to reward people who contribute to the prompts library when their prompts are used
+and there could be a service based on ocean protocol which means that people dont need to reveal their secret prompts when they want to execute the prompts
+if those prompts rely on other prompt libraries
+this is making me think i should move my eth to streamr after i sell streamr for eth
+move my eth to ocean, i mean
+http://github.com/mullikine/emacs-openai-api-playground/blob/master/design.org
+im making an emacs playground atm
+its gonna be the best openai playground :P
+i think i could beat basically anything thats out there
+but having a DSL to compliment it would be awesome" 0 38 (fontified t face org-link mouse-face highlight keymap #2# help-echo #24="LINK: https://github.com/mullikine/examplary" htmlize-link #23=(:uri "https://github.com/mullikine/examplary") font-lock-multiline t wrap-prefix #1#) 38 39 (fontified t rear-nonsticky #8# face org-link mouse-face highlight keymap #2# help-echo #24# htmlize-link #23# font-lock-multiline t wrap-prefix #1#) 39 40 (fontified t wrap-prefix #1#) 40 78 (fontified t insert-in-front-hooks #5# wrap-prefix #1#) 78 79 (fontified t display nil face default insert-in-front-hooks #5# wrap-prefix #1#) 79 109 (fontified t wrap-prefix #1#) 109 141 (fontified t wrap-prefix #1#) 141 263 (fontified t wrap-prefix #1#) 263 339 (fontified t wrap-prefix #1#) 339 353 (fontified t wrap-prefix #1#) 353 444 (fontified t wrap-prefix #1#) 444 500 (fontified t wrap-prefix #1#) 500 609 (fontified t wrap-prefix #1#) 609 682 (fontified t wrap-prefix #1#) 682 746 (fontified t face org-link mouse-face highlight keymap #2# help-echo #26="LINK: http://github.com/mullikine/glossaries-gh/blob/master/openai.txt" htmlize-link #25=(:uri "http://github.com/mullikine/glossaries-gh/blob/master/openai.txt") font-lock-multiline t wrap-prefix #1#) 746 747 (fontified t rear-nonsticky #8# face org-link mouse-face highlight keymap #2# help-echo #26# htmlize-link #25# font-lock-multiline t wrap-prefix #1#) 747 748 (fontified t wrap-prefix #1#) 748 806 (fontified t face org-link mouse-face highlight keymap #2# help-echo #28="LINK: https://storage.googleapis.com/gcs-vuse/prompt-design.html" htmlize-link #27=(:uri "https://storage.googleapis.com/gcs-vuse/prompt-design.html") font-lock-multiline t wrap-prefix #1#) 806 807 (fontified t rear-nonsticky #8# face org-link mouse-face highlight keymap #2# help-echo #28# htmlize-link #27# font-lock-multiline t wrap-prefix #1#) 807 808 (fontified t wrap-prefix #1#) 808 840 (fontified t wrap-prefix #1#) 840 895 (fontified t wrap-prefix #1#) 895 942 (fontified t wrap-prefix #1#) 942 1040 (fontified t wrap-prefix #1#) 1040 1078 (fontified t wrap-prefix #1#) 1078 1109 (fontified t wrap-prefix #1#) 1109 1140 (fontified t wrap-prefix #1#) 1140 1245 (fontified t wrap-prefix #1#) 1245 1314 (fontified t wrap-prefix #1#) 1314 1411 (fontified t wrap-prefix #1#) 1411 1507 (fontified t wrap-prefix #1#) 1507 1544 (fontified t face org-link mouse-face highlight keymap #2# help-echo #30="LINK: https://github.com/wgryc/gpt3-prompts" htmlize-link #29=(:uri "https://github.com/wgryc/gpt3-prompts") font-lock-multiline t wrap-prefix #1#) 1544 1545 (fontified t rear-nonsticky #8# face org-link mouse-face highlight keymap #2# help-echo #30# htmlize-link #29# font-lock-multiline t wrap-prefix #1#) 1545 1546 (fontified t wrap-prefix #1#) 1546 1574 (fontified t wrap-prefix #1#) 1574 1631 (fontified t wrap-prefix #1#) 1631 1640 (fontified t wrap-prefix #1#) 1640 1816 (fontified t wrap-prefix #1#) 1816 1880 (fontified t wrap-prefix #1#) 1880 1927 (fontified t wrap-prefix #1#) 1927 1998 (fontified t wrap-prefix #1#) 1998 2091 (fontified t wrap-prefix #1#) 2091 2152 (fontified t wrap-prefix #1#) 2152 2286 (fontified t wrap-prefix #1#) 2286 2316 (fontified t wrap-prefix #1#) 2316 2394 (fontified t wrap-prefix #1#) 2394 5274 (fontified nil)) . 1) (undo-tree-id12 . -5274) (undo-tree-id13 . -40) (undo-tree-id14 . -748) (undo-tree-id15 . -753) (undo-tree-id16 . -1507) (undo-tree-id17 . -1512)) (24619 42133 480227 294000) 0 nil]) nil nil (24619 42133 480805 608000) 0 (:register 94)] #31# 16000 2 nil)
