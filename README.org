@@ -10,7 +10,7 @@
   - Direct LM requests
     - Spacy
 
-| File extension |                   |
+| File extension | Name              |
 |----------------+-------------------|
 | =xlr=          | exampalry clojure |
 
@@ -20,6 +20,11 @@ curation of GPT-3 prompts that are formatted
 for =pen.el= and =examplary=.
 
 https://github.com/mullikine/prompts/
+
+** Interpreter
+| File  | Name            |
+|-------+-----------------|
+| =xlr= | XLR interpreter |
 
 ** Tasks to implement
 - https://spacy.io/universe/project/contextualSpellCheck
