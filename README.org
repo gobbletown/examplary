@@ -11,7 +11,7 @@
     - Spacy
 
 ** Prompts
-$MYGIT/mullikine/prompts
+http://github.com/mullikine/prompts
 
 ** Tasks to implement
 - https://spacy.io/universe/project/contextualSpellCheck
