@@ -10,6 +10,10 @@
   - Direct LM requests
     - Spacy
 
+| File extension |                   |
+|----------------+-------------------|
+| =xlr=          | exampalry clojure |
+
 ** Prompts
 This is the repository containing my personal
 curation of GPT-3 prompts that are formatted
