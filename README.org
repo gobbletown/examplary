@@ -10,9 +10,9 @@
   - Direct LM requests
     - Spacy
 
-| File extension | Name              |
-|----------------+-------------------|
-| =xlr=          | exampalry clojure |
+| File extension | Name                          |
+|----------------+-------------------------------|
+| =xlr=          | exampalry clojure source file |
 
 ** Prompts
 This is the repository containing my personal
