@@ -1,2 +1,9 @@
 * [#A] Integrate this with prompts
 https://github.com/aantn/reconstant
+
+* TODO Make it so this is reversible
+e:$MYGIT/semiosis/prompts/prompts/haskell-to-clojure.prompt
+
+How to do that? I need a DSL that compiles to
+a prompt and can be parameterised to compile
+in reverse.
