@@ -23,21 +23,34 @@
 
 # Keep this set as lisp so that it renders on the blog
 #+BEGIN_SRC lisp -n :i clj :async :results verbatim code
+  ;; XLR
   (def lines->regex
     :e "grex"
     "example 1\nexample2" "^example [12]$"
     "example 2\nexample3" "^example [23]$"
     "pi4\npi5" "^pi[45]$")
-  
+
+  ;; elisp
+
+
+  ;; clojure
+
+  ;; -------
+  ;; Further examples
+  ;; -------
+
+  ;; XLR
   (def topic->analogy
     ;; Each line is a training example.
     "Neural networks" "Neural networks are like genetic algorithms in that both are systems that learn from experience"
     "Social media" "Social media is like a market in that both are systems that coordinate the actions of many individuals.")
-  
+
+  ;; XLR
   (def topic->field-of-study
     "chemistry" "study of chemicals"
     "biology" "study of living things")
-  
+
+  ;; XLR
   (def cron->natural-language
     :e "interpret-crontab"
     "17 *	* * *" "At minute 17."
