@@ -1,4 +1,6 @@
 * =examplary= - An example-oriented DSL that can be used to construct and compose NLP tasks
+- 4th-Generation Language (4GL)
+  - https://www.britannica.com/technology/fourth-generation-language
 - Write code declaratively for functions that don't exist yet
 - Describe literary devices
 - seq2sesq
