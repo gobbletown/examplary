@@ -16,7 +16,7 @@
 |----------------+-------------------------------|
 | =xlr=          | exampalry clojure source file |
 
-+ Prototype code: http://github.com/semiosis/pen.el/blob/master/examplary.el
++ Prototype code: http://github.com/semiosis/pen.el/blob/master/src/pen-examplary.el
 
 ** Introduction to the language
 + =:g= :: specifies an external [pipable] command which can generate examples or as a source of truth for query reformulation (when generating prompts)
